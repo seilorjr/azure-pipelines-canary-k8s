@@ -67,7 +67,7 @@ stages:
               manifests: |
                 $(Pipeline.Workspace)/manifests/deployment.yml
                 $(Pipeline.Workspace)/manifests/service.yml
-              containers: '$(containerRegistry)/$(imageRepository):$(tag)'
+              containers: 'seilor.azurecr.io/$(imageRepository):$(tag)'
               imagePullSecrets: azure-pipelines-canary-k8s
 
           - task: KubernetesManifest@0

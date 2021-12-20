@@ -36,8 +36,3 @@ stages:
     - upload: misc
       artifact: misc
 
-- stage: DeployCanary
-  displayName: Deploy canary
-  dependsOn: Build
-  condition: succeeded()
-

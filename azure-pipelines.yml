@@ -8,7 +8,7 @@ variables:
   imageName: azure-pipelines-canary-k8s
   dockerRegistryServiceConnection: azure-pipelines-canary-k8s #replace with name of your Docker registry service connection
   imageRepository: 'azure-pipelines-canary-k8s'
-  containerRegistry: seilor #replace with the name of your container registry, Should be in the format foobar.azurecr.io
+  containerRegistry: seilor.azurecr.io #replace with the name of your container registry, Should be in the format foobar.azurecr.io
   tag: '$(Build.BuildId)'
 
 stages:
